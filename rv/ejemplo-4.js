@@ -1,5 +1,5 @@
 var escena = new THREE.Scene();
-var camara = new THREE.PerspectiveCamera();
+var camara = new THREE.OrthographicCamera();
 camara.position.z = 3;
 var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize( window.innerHeight*.95,
