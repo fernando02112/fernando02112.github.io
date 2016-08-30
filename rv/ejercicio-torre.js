@@ -5,7 +5,7 @@ troncoForma.translate(0,.25,0);
 var troncoMalla = new THREE.Mesh(troncoForma);
 var baseMalla = new THREE.Mesh(baseForma);
 
-var arbolForma = new THREE.Geometry();
+var torreForma = new THREE.Geometry();
 
 torreForma.merge(troncoMalla.geometry, troncoMalla.matrix);
 torreForma.merge(baseMalla.geometry, baseMalla.matrix);
