@@ -18,6 +18,7 @@ forma.faces.push( new THREE.Face3(2,  6,  7));<!--cara5-->
 forma.faces.push( new THREE.Face3(2,  5,  6));
 forma.faces.push( new THREE.Face3(2,  1,  5));
 forma.faces.push( new THREE.Face3(1,  4,  5));
+forma.faces.push( new THREE.Face3(4,  6,  5));
 
 forma.computeBoundingSphere();<!--esfera de menor tamaño que acota al objeto-->
 forma.computeFaceNormals();<!--se computan las normales de las caras por el tipo de material a usar-->
