@@ -12,6 +12,13 @@ forma.vertices.push(  new THREE.Vector3(  -1,  1,  1));<!--vértice 7-->
 forma.faces.push( new THREE.Face3(3,  2,  1));<!--cara0-->
 forma.faces.push( new THREE.Face3(3,  1,  0));
 forma.faces.push( new THREE.Face3(3,  0,  4));
+forma.faces.push( new THREE.Face3(3,  4,  7));
+forma.faces.push( new THREE.Face3(3,  7,  2));
+forma.faces.push( new THREE.Face3(2,  6,  7));<!--cara5-->
+forma.faces.push( new THREE.Face3(2,  5,  6));
+forma.faces.push( new THREE.Face3(2,  1,  5));
+forma.faces.push( new THREE.Face3(1,  4,  5));
+forma.faces.push( new THREE.Face3(4,  6,  5));
 
 
 
