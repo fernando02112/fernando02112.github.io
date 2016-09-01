@@ -8,7 +8,7 @@ troncoForma.translate(0,1,0);
 var troncoMalla = new THREE.Mesh(troncoForma);
 var baseMalla = new THREE.Mesh(baseForma);
 var subaseMalla = new THREE.Mesh(subaseForma);
-var superiorMalla = new THREE.Mesh(supeiorForma);
+var superiorMalla = new THREE.Mesh(superiorForma);
 var torreForma = new THREE.Geometry();
 torreForma.merge(troncoMalla.geometry, troncoMalla.matrix);
 torreForma.merge(baseMalla.geometry, baseMalla.matrix);
