@@ -14,6 +14,20 @@ forma.faces.push( new THREE.Face3(3,  1,  0));
 forma.faces.push( new THREE.Face3(3,  0,  4));
 forma.faces.push( new THREE.Face3(0,  1,  4));
 forma.faces.push( new THREE.Face3(1,  5,  4));
+forma.faces.push( new THREE.Face3(1,  2,  6));<!--cara5-->
+forma.faces.push( new THREE.Face3(6,  5,  2));
+forma.faces.push( new THREE.Face3(2,  3,  7));
+forma.faces.push( new THREE.Face3(2,  7,  6));
+forma.faces.push( new THREE.Face3(3,  0,  4));
+forma.faces.push( new THREE.Face3(3,  4,  7));<!--cara10-->
+forma.faces.push( new THREE.Face3(6,  4,  7));<!--cara5-->
+forma.faces.push( new THREE.Face3(7,  6,  5));
+forma.faces.push( new THREE.Face3(5,  4,  6));
+
+
+
+
+
 
 
 
