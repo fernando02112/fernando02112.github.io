@@ -21,6 +21,9 @@ forma.faces.push( new THREE.Face3(2,  3,  7));
 forma.faces.push( new THREE.Face3(6,  7,  2));
 forma.faces.push( new THREE.Face3(7,  4,  3));
 forma.faces.push( new THREE.Face3(4,  6,  7));
+forma.faces.push( new THREE.Face3(4,  7,  3));<!--cara5-->
+
+
 
 
 
