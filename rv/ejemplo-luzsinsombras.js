@@ -21,3 +21,10 @@ camara.position.y = 5;
 var lienzo = document.getElementById("luzSinSombras");
 var renderizador = new THREE.WebGLRenderer({canvas: lienzo, antialias: true});
 
+renderizador.shadowMapEnabled = true;
+malla.castShadow = true;
+base.receiveShadow = true;
+iluminacion.castShadow = true;
+
+renderizador.render(escena, camara);
+
