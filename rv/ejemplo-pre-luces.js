@@ -1,6 +1,7 @@
 var iluminacion = new THREE.PointLight(0xFF00FF);
 var iluminacion2 = new THREE.PointLight(0xFFFF00);
 var iluminacion3 = new THREE.PointLight(0x00FFFF);
+iluminacion.position.set(20,20,20);
 iluminacion.position.y = 20;
 iluminacion.position.x = 10;
 iluminacion2.position.y = 20;
