@@ -19,7 +19,7 @@ requestAnimationFrame(loop);
 renderizador.render(escena, camara);
 malla.rotateY(0.01);
 
-if (Math.abs(malla.position.x)>10)
+if (Math.abs(malla.position.x)>2)
   step=-step;
   malla.position.x+=step;
 }
