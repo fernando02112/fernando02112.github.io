@@ -9,6 +9,7 @@ camara = new THREE.PerspectiveCamera();
 renderizador = new THREE.WebGLRenderer();
 renderizador.setSize(700, 700);
 document.body.appendChild(renderizador.domElement);
+camara.position.z = 5*p;
 }
 
 var main = function(p) <!--function(p) es una fucnión anónima que se puede asignar a un símbolo-->
