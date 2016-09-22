@@ -10,15 +10,18 @@ renderizador = new THREE.WebGLRenderer();
 renderizador.setSize(700, 700);
 document.body.appendChild(renderizador.domElement);
 camara.position.z = 5*p;
+step=0.1;
 }
 
 var loop = function() <!--function(p) es una fucnión anónima que se puede asignar a un símbolo-->
 { 
 requestAnimationFrame(loop);
 renderizador.render(escena, camara);
+malla.rotateY(0.01);
 
-malla.positionX(0.01);
-
+if (Math.abs(malla.position.x)>5)
+  step=-step;
+  malla.position.x+=step;
 }
 
 var escena, camara, renderizador, malla;
