@@ -7,7 +7,7 @@ escena.add(malla);
 camara = new THREE.PerspectiveCamera();
 renderizador = new THREE.WebGLRenderer();
 renderizador.setSize(700, 700);
-document.body.appenChild(renderizador.domElement);
+document.body.appendChild(renderizador.domElement);
 }
 
 var main = function(p){ <!--function(p) es una fucnión anónima que se puede asignar a un símbolo-->
