@@ -10,7 +10,7 @@ renderizador = new THREE.WebGLRenderer();
 renderizador.setSize(700, 700);
 document.body.appendChild(renderizador.domElement);
 camara.position.z = 5*p;
-step=0.01;
+step=0.1;
 }
 
 var loop = function() <!--function(p) es una fucnión anónima que se puede asignar a un símbolo-->
