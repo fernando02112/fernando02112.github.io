@@ -16,7 +16,7 @@ var loop = function() <!--function(p) es una fucnión anónima que se puede asig
 { 
 requestAnimationFrame(loop);
 renderizador.render(escena, camara);
-malla.rotateY(0.01);
+
 malla.positionX(0.01);
 
 }
