@@ -11,7 +11,8 @@ renderizador.setSize(700, 700);
 document.body.appendChild(renderizador.domElement);
 }
 
-var main = function(p){ <!--function(p) es una fucnión anónima que se puede asignar a un símbolo-->
+var main = function(p) <!--function(p) es una fucnión anónima que se puede asignar a un símbolo-->
+{ 
 renderizador.render(escena, camara);
 }
 
