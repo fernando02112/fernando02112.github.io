@@ -11,5 +11,9 @@ document.body.appenChild(renderizador.domElement);
 }
 
 var main = function(p){ <!--function(p) es una fucnión anónima que se puede asignar a un símbolo-->
-renderizador.render(escena, camara);
+renderizador.renderer(escena, camara);
 }
+
+var escena, camara, renderizador;
+init(1);
+main();
