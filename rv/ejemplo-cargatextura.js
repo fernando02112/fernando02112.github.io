@@ -18,9 +18,14 @@ TEXTURA.renderizador.setSize(600, 600);
 TEXTURA.loop = function() {
 requestAnimationFrame(TEXTURA.loop);
 
-if(TEXTURA.malla != undefined){
+if(TEXTURA.malla !== undefined){
 TEXTURA.malla.rotateX(0.01);
 TEXTURA.malla.rotate(0.01);
+}
+ TEXTURA.renderizador.render(TEXTURA.escena, TEXTURA.camara);
+}
+TEXTURA.setup();
+TEXTURA.loop();
 
 
  
