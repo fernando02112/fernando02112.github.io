@@ -6,6 +6,7 @@ TEXTURA.escena.add(TEXTURA.malla);
 }
 
 TEXTURA.setup = function(){
+ var cargador = new THREE.TextureLoader();
 cargador.load("earth_atmos_2048.jpg", TEXTURA.retrollamada);
 TEXTURA.camara = new THREE.PerspectiveCamera(75, innerWidth/windowHeight, 0.1, 1000);
 TEXTURA.camara.position.z = 5;
