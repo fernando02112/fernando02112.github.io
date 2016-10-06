@@ -20,7 +20,7 @@ function Torre()
      
       
       var material = new THREE.MeshNormalMaterial();
-      this.malla = new THREE.Mesh(torreForma,material);
+      this.malla = new THREE.Mesh(torreForma, material);
 }
 
 var CONSTRUCTOR = new Object();
@@ -43,6 +43,7 @@ CONSTRUCTOR.setup = function()
       CONSTRUCTOR.escena = new THREE.Scene();
       CONSTRUCTOR.escena.add(torre1.malla);
       CONSTRUCTOR.escena.add(torre2.malla);
+      
 }
 
 CONSTRUCTOR.loop = function()
