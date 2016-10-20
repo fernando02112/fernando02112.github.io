@@ -24,7 +24,7 @@ function Pieza ()
    camara = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
     camara.position.z = 20;
     
-    var lienzo = document.getElementById("ejemplo-object3D");
+    var lienzo = document.getElementById("ejemplo-object3d");
      renderizador = new THREE.WebGLRenderer({canvas:lienzo, antialias:true});
      renderizador.setSize(600,600);
       
