@@ -1,8 +1,8 @@
 function Pieza ()
 {
   THREE.Object3D.call(this);
-  this piernaIzq = new THREE.Mesh(new THREE.BoxGeometry(1,5,1));
-  this piernaDer = new THREE.Mesh(new THREE.BoxGeometry(1,5,1));
+  this.piernaIzq = new THREE.Mesh(new THREE.BoxGeometry(1,5,1));
+  this.piernaDer = new THREE.Mesh(new THREE.BoxGeometry(1,5,1));
   var cuerpo = new THREE.Mesh(new THREE.BoxGeometry(5,10,5));
   this.add(piernaIzq, piernaDer, cuerpo);
   this.piernaIzq.position.z = -2;
@@ -34,10 +34,10 @@ function Pieza ()
   }
   
   function loop(){
-  pieza.rotateY = 0.1;
+  pieza.rotateY(0.1);
  
-    requestAnimationFrame(pieza.loop);
-    pieza.rendereizador.render(pieza.escena, pieza.camara);
+    requestAnimationFrame(loop);
+    rendereizador.render(escena, camara);
   }
 
 setup();
