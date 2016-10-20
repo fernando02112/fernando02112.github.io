@@ -35,7 +35,7 @@ var camara;
   }
   
   function loop(){
-  pieza.rotateY(0.1);
+  pieza.rotateY(0.05);
     pieza.piernaDer.rotateZ(0.1);
  
     requestAnimationFrame(loop);
