@@ -19,16 +19,16 @@ function Pieza ()
   
     
     var escena;
-    
+         escena = new THREE.Scene();
+     escena.add(pieza);
    camara = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
     camara.position.z = 20;
     
     var lienzo = document.getElementById("ejemplo-object3D");
-      pieza.renderizador = new THREE.WebGLRenderer({canvas:lienzo, antialias:true});
-      pieza.renderizador.setSize(600,600);
+     renderizador = new THREE.WebGLRenderer({canvas:lienzo, antialias:true});
+     renderizador.setSize(600,600);
       
-     escena = new THREE.Scene();
-     escena.add(pieza);
+
       
   }
   
