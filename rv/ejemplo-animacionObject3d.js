@@ -12,13 +12,15 @@ function Pieza ()
   cuerpo.position.z = 2.5;
   }
   var pieza;
+var escena;
+var camara;
   Pieza.prototype = new THREE.Object3D
   function setup()
   {
  pieza = new Pieza();
   
     
-    var escena;
+     
          escena = new THREE.Scene();
      escena.add(pieza);
    camara = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
