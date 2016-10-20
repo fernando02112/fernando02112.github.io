@@ -14,6 +14,9 @@ function Pieza ()
   var pieza;
 var escena;
 var camara;
+
+step=0.01;
+
   Pieza.prototype = new THREE.Object3D
   function setup()
   {
@@ -40,6 +43,10 @@ var camara;
  
     requestAnimationFrame(loop);
     renderizador.render(escena, camara);
+    
+    if (Math.abs(pieza.piernaDer.rotateZ)>=2)
+  step=-step;
+  malla.position.x+=step;
   }
 
 setup();
