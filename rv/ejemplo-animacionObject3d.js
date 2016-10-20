@@ -36,6 +36,7 @@ var camara;
   
   function loop(){
   pieza.rotateY(0.1);
+    pieza.piernaDer.rotateZ(0.1);
  
     requestAnimationFrame(loop);
     renderizador.render(escena, camara);
