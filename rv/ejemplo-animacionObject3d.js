@@ -28,8 +28,8 @@ function Pieza ()
       pieza.renderizador.setSize(600,600);
       
       pieza.escena = new THREE.Scene();
-      pieza.escena.add(this piernaIzq);
-      pieza.escena.add(this piernaDer);
+      pieza.escena.add(this.piernaIzq);
+      pieza.escena.add(this.piernaDer);
       pieza.escena.add(cuerpo);
   }
   
