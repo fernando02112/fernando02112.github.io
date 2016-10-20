@@ -36,7 +36,7 @@ function Pieza ()
   pieza.rotateY(0.1);
  
     requestAnimationFrame(loop);
-    rendereizador.render(escena, camara);
+    renderizador.render(escena, camara);
   }
 
 setup();
