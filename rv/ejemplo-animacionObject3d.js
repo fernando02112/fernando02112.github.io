@@ -16,15 +16,18 @@ function Pieza ()
   function setup()
   {
   var pieza = new Pieza();
-  var escena;
+  
+    
+    var escena;
     
     var lienzo = document.getElementById("ejemplo-object3D");
-      renderizador = new THREE.WebGLRenderer({canvas:lienzo, antialias:true});
-      renderizador.setSize(600,600);
+      pieza.renderizador = new THREE.WebGLRenderer({canvas:lienzo, antialias:true});
+      pieza.renderizador.setSize(600,600);
       
       escena = new THREE.Scene();
-      escena.add(torre1.malla);
-      escena.add(torre2.malla);
+      escena.add(this piernaIzq);
+      escena.add(this piernaDer);
+      escena.add(cuerpo);
   }
   
   function loop(){
