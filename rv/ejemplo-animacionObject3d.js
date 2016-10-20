@@ -16,15 +16,15 @@ function Pieza ()
   function setup()
   {
   var pieza = new Pieza();
- 
+  var escena;
     
-    var lienzo = document.getElementById("ejemplo-constructor2");
-      CONSTRUCTOR.renderizador = new THREE.WebGLRenderer({canvas:lienzo, antialias:true});
-      CONSTRUCTOR.renderizador.setSize(600,600);
+    var lienzo = document.getElementById("ejemplo-object3D");
+      renderizador = new THREE.WebGLRenderer({canvas:lienzo, antialias:true});
+      renderizador.setSize(600,600);
       
-      CONSTRUCTOR.escena = new THREE.Scene();
-      CONSTRUCTOR.escena.add(torre1.malla);
-      CONSTRUCTOR.escena.add(torre2.malla);
+      escena = new THREE.Scene();
+      escena.add(torre1.malla);
+      escena.add(torre2.malla);
   }
   
   function loop(){
