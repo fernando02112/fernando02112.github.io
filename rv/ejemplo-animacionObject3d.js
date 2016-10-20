@@ -20,19 +20,30 @@ function Pieza ()
     
     var escena;
     
+    pieza.camara = new THREE.PerspectiveCamera();
+    pieza.camara.position.z = 20;
+    
     var lienzo = document.getElementById("ejemplo-object3D");
       pieza.renderizador = new THREE.WebGLRenderer({canvas:lienzo, antialias:true});
       pieza.renderizador.setSize(600,600);
       
-      escena = new THREE.Scene();
-      escena.add(this piernaIzq);
-      escena.add(this piernaDer);
-      escena.add(cuerpo);
+      pieza.escena = new THREE.Scene();
+      pieza.escena.add(this piernaIzq);
+      pieza.escena.add(this piernaDer);
+      pieza.escena.add(cuerpo);
   }
   
   function loop(){
   pieza.rotateY = 0.1;
-  ............
+ 
+    requestAnimationFrame(pieza.loop);
+    pieza.rendereizador.render(pieza.escena, pieza.camara);
   }
+
+setup();
+loop();
+  
+  
+
   
   
