@@ -115,4 +115,5 @@ Environment.prototype.act = function() {
     renderer.render(entorno, camara);
    }
     
- 
+ setup();
+    loop();
