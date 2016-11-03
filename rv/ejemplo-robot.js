@@ -13,7 +13,7 @@ Agent.prototype.act = function(environment) {};
 
 function Environment() {
     THREE.Scene.call(this);
-    
+}
     Environment.prototype = new THREE.Scene();
     
  Environment.prototype.sense = function() {
@@ -36,7 +36,7 @@ Environment.prototype.act = function() {
           this.children[i].act(this);
        }
     }
-}
+
  function Wall(size, x, y)
  {
     THREE.Mesh.call(this, new THREE.BoxGeometry(  size, size, size), new THREE.MeshNormalMaterial());
