@@ -12,7 +12,7 @@ Agent.prototype.act = function(environment) {};
 
 function Environment() {
     THREE.Scene.call(this);
-    
+}
     Environment.prototype = new THREE.Scene();
     
  Environment.prototype.sense = function() {
