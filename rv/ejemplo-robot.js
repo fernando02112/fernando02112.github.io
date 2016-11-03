@@ -37,12 +37,6 @@ Environment.prototype.act = function() {
        }
     }
     
-
-
-
-
-
-//
  function Wall(size, x, y)
  {
     THREE.Mesh.call(this, new THREE.BoxGeometry(  size, size, size), new THREE.MeshNormalMaterial());
@@ -187,7 +181,6 @@ Robot.prototype.operations.rotateCCW = function(robot, angle) {
    robot.rotation.z += angle;
 }
 
-}
 
 setup();
 loop(); 
