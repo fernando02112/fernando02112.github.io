@@ -58,6 +58,8 @@ Environment.prototype.setMap = function(map) {
    }
 }
 
+var environment, camera, renderer;
+
 function setup() {
   var mapa = new Array();
  mapa[0] ="xxxxxxxxxxxxxxxxxxxxxxxxx";
@@ -181,7 +183,7 @@ Robot.prototype.operations.rotateCCW = function(robot, angle) {
    robot.rotation.z += angle;
 }
 
-var environment, camera, renderer;
+
 setup();
 loop(); 
 
