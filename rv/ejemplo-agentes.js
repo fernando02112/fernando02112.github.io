@@ -36,7 +36,7 @@ Environment.prototype.act = function() {
        }
     }
     
-    }
+    
     
  function Pelota(r, x=0, y=0)
  {
