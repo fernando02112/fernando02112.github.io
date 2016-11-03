@@ -187,6 +187,8 @@ Robot.prototype.operations.rotateCCW = function(robot, angle) {
    robot.rotation.z += angle;
 }
 
+}
+
 setup();
 loop(); 
 
