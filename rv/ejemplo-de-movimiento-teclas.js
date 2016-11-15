@@ -1,4 +1,3 @@
-var length = 16, width = 12;
 
 var cuadrado = new THREE.Shape();
 cuadrado.moveTo( 0,0 );
