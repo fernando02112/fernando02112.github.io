@@ -121,36 +121,31 @@ torreMalla3.translateY(3);
 torreMalla3.translateX(70);
 
 //Tablero
-var campoVision = 45;
-var relacionAspecto = window.innerWidth / window.innerHeight;
-var planoCercano = 1;
-var planoLejano = 1000;
-var camara = new THREE.PerspectiveCamera(campoVision, relacionAspecto, planoCercano, planoLejano);
+var camara = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 1000);
 camara.position.z=50;
 camara.position.x=160;
 camara.position.y=40;
-//camara.rotateY(1.365);
-//camara.rotateX(Math.PI/4);
-camara.lookAt(new THREE.Vector3(40,40,0));
+
+//camara.lookAt(new THREE.Vector3(40,40,0));
 camara.rotateZ(Math.PI/2);
 
 
 var escena = new THREE.Scene();
-var cubo= new Array();
+var cuadro= new Array();
 var a=2;
-for(var k=0; k<64; k++){
-  for(var i=0; i<8; i++){
-    for(var j=0; j<8; j++){
+for(var k=0; i<64; i++){
+  for(var i=0; j<8; j++){
+    for(var j=0; k<8; k++){
       if(a==2){
-        cubo[k] = new THREE.Mesh( new THREE.BoxGeometry(10, 10, 4), new THREE.MeshBasicMaterial({color: 0xffffff}) );
+        cuadro[i] = new THREE.Mesh( new THREE.BoxGeometry(10, 10, 4), new THREE.MeshBasicMaterial({color: 0xffffff}) );
         a=1;
       }else{
-        cubo[k] = new THREE.Mesh( new THREE.BoxGeometry(10, 10, 4), new THREE.MeshBasicMaterial({color: 0x999999}) );
+        cuadro[i] = new THREE.Mesh( new THREE.BoxGeometry(10, 10, 4), new THREE.MeshBasicMaterial({color: 0x999999}) );
         a=2;
       }
-     cubo[k].position.x=j*10;
-     cubo[k].position.y=i*10;
-     escena.add(cubo[k]);
+     cuadro[i].position.x=k*10;
+     cuadro[i].position.y=j*10;
+     escena.add(cuadro[i]);
    }
    if(a==2){
         a=1;
