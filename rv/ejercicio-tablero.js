@@ -27,7 +27,7 @@ camara.position.z=50;
 camara.position.x=160;
 camara.position.y=40;
 
-//camara.lookAt(new THREE.Vector3(40,40,0));
+camara.lookAt(new THREE.Vector3(40,40,0));
 camara.rotateZ(Math.PI/2);
 
 
