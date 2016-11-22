@@ -38,7 +38,7 @@ var a=2;
 for(i=0; i<64; i++){
   for( j=0; j<8; j++){
     for( k=0; k<8; k++){
-      if(a==2){
+      if(a===2){
         cuadro[i] = new THREE.Mesh( new THREE.BoxGeometry(10, 10, 4), new THREE.MeshBasicMaterial({color: 0xffffff}) );
         a=1;
       }else{
@@ -49,11 +49,7 @@ for(i=0; i<64; i++){
      cuadro[i].position.y=j*10;
      escena.add(cuadro[i]);
    }
-   if(a==2){
-        a=1;
-      }else{
-        a=2;
-      }
+   
   }
 }
 
