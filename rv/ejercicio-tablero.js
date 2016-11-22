@@ -34,9 +34,9 @@ camara.rotateZ(Math.PI/2);
 var escena = new THREE.Scene();
 var cuadro= new Array();
 var a=2;
-for(var k=0; i<64; i++){
-  for(var i=0; j<8; j++){
-    for(var j=0; k<8; k++){
+for(var i=0; i<64; i++){
+  for(var j=0; j<8; j++){
+    for(var k=0; k<8; k++){
       if(a==2){
         cuadro[i] = new THREE.Mesh( new THREE.BoxGeometry(10, 10, 4), new THREE.MeshBasicMaterial({color: 0xffffff}) );
         a=1;
