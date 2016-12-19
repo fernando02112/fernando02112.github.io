@@ -16,6 +16,7 @@ renderizador.setSize( window.innerHeight*.85,
 			
 document.body.appendChild (renderizador.domElement);
 
+// Construcción del tablero
 for(var i=1; i<=8; i++)
 {
    for(var j=1; j<=8; j++)
@@ -44,7 +45,7 @@ for(var i=1; i<=8; i++)
    }
 }
 
-//Inicio Torre
+// Geometría de la torre
 var troncoForma = new THREE.CylinderGeometry(3, 3, 8);
 var baseForma = new THREE.CylinderGeometry(4, 4, 1);
 var subaseForma = new THREE.CylinderGeometry(5, 5, 1);
@@ -65,9 +66,11 @@ torreForma.merge(superiorMalla.geometry, superiorMalla.matrix);
 var material = new THREE.MeshNormalMaterial();
 var torreMalla = new THREE.Mesh(torreForma, material);
 
+//Añadiendo los colores 
 var material1=new THREE.MeshBasicMaterial( {color: 0xb8b8b8} );
 var material2=new THREE.MeshBasicMaterial( {color: 0xffffff});
 
+//Definición de las cuatro torres con su respectivo color
 var torreMalla1= new THREE.Mesh(torreForma,material1);
 torreMalla1.position.x=10;
 torreMalla1.position.z=10;
@@ -88,6 +91,6 @@ escena.add(torreMalla1);
 escena.add(torreMalla2);
 escena.add(torreMalla3);
 escena.add(torreMalla4);
-//Fin Torre
+
 
 renderizador.render(escena,camara);
