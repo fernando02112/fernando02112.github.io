@@ -117,13 +117,7 @@ var torreMalla4= new THREE.Mesh(torreForma,Opacidad50);
 torreMalla4.position.x=70;
 torreMalla4.position.z=70;
 	
-var base = new THREE.Mesh(new THREE.BoxGeometry(90,.1,90),new THREE.MeshLambertMaterial({color:0x804000}));
-base.position.y=-0.1;
-base.position.x=45;
-base.position.z=45;
-
 var escena=new THREE.Scene();
-escena.add(base);
 escena.add(torreMalla1);
 escena.add(torreMalla2);
 escena.add(torreMalla3);
