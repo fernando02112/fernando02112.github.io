@@ -30,7 +30,7 @@ torreForma.merge(superiorMalla.geometry, superiorMalla.matrix);
 		}
 	);
 }
-
+	var materialTextura;
 	var cargadorTextura = new THREE.TextureLoader();
 	cargadorTextura.load( materialTextura, function(textura)
 		{
