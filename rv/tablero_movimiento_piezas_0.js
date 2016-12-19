@@ -3812,7 +3812,7 @@ Cursor.prototype.act = function(environment){
 ////////////////////////////////////Posición Inicial///////////////////////////////////////////////////////////////////////////////////////
 function BloqueRojo(x=0,y=0,z=0){
   Agent.call(this,x,y,z);
-  var luzroja =  new THREE.MeshLambertMaterial({color: 0xff0000});
+  var luzroja =  new THREE.MeshLambertMaterial({color: 0x00ff00});
   this.add(new THREE.Mesh(new THREE.BoxGeometry(10.2,10.2,10.2),luzroja));
   this.position.y=y;
   this.position.z=z;
@@ -3823,7 +3823,7 @@ BloqueRojo.prototype = new Agent();
 ///////////////////////////////////Ayuda//////////////////////////////////////////////////////////////////////////////////////	    
 function Ayuda(x=0,y=0,z=0){
   Agent.call(this,x,y,z);
-  var luzmorada = new THREE.MeshLambertMaterial({color: 0xff0000});
+  var luzmorada = new THREE.MeshLambertMaterial({color: 0x00ff00});
   this.add(new THREE.Mesh(new THREE.BoxGeometry(10.1,10.1,10.1),luzmorada));
   this.position.y=y;
   this.position.z=z;
