@@ -35,6 +35,20 @@ torreForma.merge(superiorMalla.geometry, superiorMalla.matrix);
 	);
 }
 
+function Cuadro(posX,posZ,materialTextura)
+{
+	var cargadorTextura = new THREE.TextureLoader();
+	cargadorTextura.load( materialTextura,
+	        function(textura)
+		{
+			var forma = new THREE.BoxGeometry( 10,.1,10);
+			var material= new THREE.MeshBasicMaterial( {map:textura} );
+			var malla=new THREE.Mesh(forma, material);
+			malla.position.x=posX;
+			malla.position.z=posZ;
+			grupo.add(malla);
+		});
+}
 	var grupo= new THREE.Group();
 
 var setup = function()
