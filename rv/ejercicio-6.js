@@ -45,14 +45,10 @@ for(var i=1; i<=8; i++)
 }
 
 //Inicio Torre
-
-
-
-
-var troncoForma = new THREE.CylinderGeometry(.5, .5, 2);
-var baseForma = new THREE.CylinderGeometry(.65, .65, .25);
-var subaseForma = new THREE.CylinderGeometry(.85, .85, .25);
-var superiorForma = new THREE.CylinderGeometry(0, .7, .75);
+var troncoForma = new THREE.CylinderGeometry(5, 5, 8);
+var baseForma = new THREE.CylinderGeometry(6.5, 6.5, 2.5);
+var subaseForma = new THREE.CylinderGeometry(8.5, 8.5, 2.5);
+var superiorForma = new THREE.CylinderGeometry(0, 7, 7.5);
 superiorForma.translate(0,2.35,0);
 baseForma.translate(0,.25,0);
 troncoForma.translate(0,1,0);
@@ -68,23 +64,21 @@ torreForma.merge(superiorMalla.geometry, superiorMalla.matrix);
 var material = new THREE.MeshNormalMaterial();
 var torreMalla = new THREE.Mesh(torreForma, material);
 
-
-
-
-
-
 var material1=new THREE.MeshBasicMaterial( {color: 0xffffff} );
 var material2=new THREE.MeshBasicMaterial( {color: 0xb8b8b8});
 
 var torreMalla1= new THREE.Mesh(torreForma,material1);
 torreMalla1.position.x=10;
 torreMalla1.position.z=10;
+
 var torreMalla2= new THREE.Mesh(torreForma,material1);
 torreMalla2.position.x=80;
 torreMalla2.position.z=10;
+
 var torreMalla3= new THREE.Mesh(torreForma,material2);
 torreMalla3.position.x=10;
 torreMalla3.position.z=80;
+
 var torreMalla4= new THREE.Mesh(torreForma,material2);
 torreMalla4.position.x=80;
 torreMalla4.position.z=80;
