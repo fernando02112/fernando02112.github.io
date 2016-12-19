@@ -58,7 +58,7 @@ var setup = function()
 	var torre3= new Torre(10,80,"maderaoscura.jpg");
         var torre4= new Torre(80,80,"maderaoscura.jpg");
 
-	//Creando Tablero
+	//Construcción del tablero
 	for(var i=1; i<=8; i++)
 	{
 		for(var j=1; j<=8; j++)
@@ -87,9 +87,9 @@ var setup = function()
 			}
 		}
 	}
-	//Fin Tablero
-
 	
+
+	//Parámetros de la cámara
 	var campoVision=30;// grado
 	var relacionAspecto=window.innerWidth/window.innerHeight;
 	var planoCercano=1;
