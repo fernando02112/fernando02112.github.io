@@ -3834,7 +3834,7 @@ Ayuda.prototype = new Agent();
 ///////////////////////////////////////Seleccion//////////////////////////////////////////////////////////////////////////////
 function Seleccion(x=0,y=0,z=0){
   Agent.call(this,x,y,z);
-  var luzverde = new THREE.MeshLambertMaterial({color: 0xffff00});
+  var luzverde = new THREE.MeshLambertMaterial({color: 0xff0000});
   this.add(new THREE.Mesh(new THREE.BoxGeometry(10.2,10.2,10.2),luzverde));
   this.position.y=y;
   this.position.z=z;
