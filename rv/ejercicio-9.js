@@ -32,7 +32,7 @@ torreForma.merge(superiorMalla.geometry, superiorMalla.matrix);
 }
 
 	var cargadorTextura = new THREE.TextureLoader();
-	cargadorTextura.load( materialTextura, function(textura){
+	cargadorTextura.load( materialTextura, function(textura),{
 			var material= new THREE.MeshBasicMaterial( {map:textura} );
 			var malla=new THREE.Mesh(alfilForma, material);
 			malla.position.x=posX;
