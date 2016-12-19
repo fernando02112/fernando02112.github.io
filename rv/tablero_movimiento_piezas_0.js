@@ -251,7 +251,7 @@ AlfilBlanco.prototype = new Agent();
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 function BloqueRojo(x=0,y=0,z=0){
   Agent.call(this,x,y,z);
-  var luzroja =  new THREE.MeshLambertMaterial({color: 0xff0000});
+  var luzroja =  new THREE.MeshLambertMaterial({color: 0x00ff00});
   this.add(new THREE.Mesh(new THREE.BoxGeometry(10.2,10.2,10.2),luzroja));
   this.position.y=y;
   this.position.z=z;
