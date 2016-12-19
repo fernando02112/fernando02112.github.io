@@ -40,12 +40,13 @@ function init(){
     var textura2 = new THREE.TextureLoader().load('maderaoscura.jpg');
     var textura3 = new THREE.TextureLoader().load('marmolblanco.jpg');
     var textura4 = new THREE.TextureLoader().load('marmolnegro.jpg');
+    var textura5 = new THREE.TextureLoader().load('Textura_madera_cafe.jpg');
     
     var marmolblanco = new THREE.MeshBasicMaterial({map:textura1});
     var marmolnegro = new THREE.MeshBasicMaterial({map:textura2});
     var ceramicablanca = new THREE.MeshBasicMaterial({map:textura3});
     var ceramicanegra = new THREE.MeshBasicMaterial({map:textura4});  
-   
+    var madera = new THREE.MeshBasicMaterial({map:textura5});
     
 torre1=new THREE.Mesh(torreForma,marmolblanco);
     torre1.position.y=80;
