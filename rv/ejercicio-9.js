@@ -1,4 +1,3 @@
-var materialTextura;
 function Torre(posX,posZ,materialTextura)
 {
 	var troncoForma = new THREE.CylinderGeometry(3, 3, 8);
@@ -109,8 +108,8 @@ var setup = function()
 		}
 	}
 	//Fin Tablero
-	/*var cargadorTextura = new THREE.TextureLoader();
-	cargadorTextura.load("Textura_madera_cafe.jpg",
+	var cargadorTextura = new THREE.TextureLoader();
+	cargadorTextura.load("maderaoscura.jpg",
 					    function(textura)
 					     {
 					     	var forma = new THREE.BoxGeometry(90,.1,90);
@@ -121,8 +120,7 @@ var setup = function()
 						malla.position.z=45;
 						grupo.add(malla);
 					     }
-					    );7
-					    */
+					    );
 	
 	var campoVision=30;// grado
 	var relacionAspecto=window.innerWidth/window.innerHeight;
