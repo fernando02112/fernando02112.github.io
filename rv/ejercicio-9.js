@@ -58,7 +58,7 @@ torreForma.merge(superiorMalla.geometry, superiorMalla.matrix);
 		console.log( 'An error happened' );
 		}
 	);
-}
+
 
 function Cuadro(posX,posZ,materialTextura)
 {
