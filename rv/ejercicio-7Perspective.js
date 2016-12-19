@@ -5,12 +5,6 @@ camara.position.z = 200;
 camara.position.y =45;
 camara.position.x =45;
 
-var renderizador = new THREE.WebGLRenderer();
-renderizador.setSize( window.innerHeight*.95,
-                    	window.innerHeight*.95);
-			
-document.body.appendChild (renderizador.domElement);
-
 // Construcción del tablero
 for(var i=1; i<=8; i++)
 {
@@ -88,4 +82,8 @@ escena.add(torreMalla3);
 escena.add(torreMalla4);
 
 
+escena.rotateX(-Math.PI/4)
+var renderizador=new THREE.WebGLRenderer();
+renderizador.setSize(window.innerHeight*.85,window.innerHeight*.85);
+document.body.appendChild(renderizador.domElement);
 renderizador.render(escena,camara);
