@@ -145,9 +145,9 @@ torreMalla1.castShadow=true;
 torreMalla2.castShadow=true;
 torreMalla3.castShadow=true;
 torreMalla4.castShadow=true;
-LuzMagenta.castShadow=true;
-LuzCyan.castShadow=true;
-LuzYellow.castShadow=true;
+Magenta.castShadow=true;
+Cyan.castShadow=true;
+Amarillo.castShadow=true;
 for ( var n=0; n<64; n ++)
 tablero[n].receiveShadow = true;
 	
