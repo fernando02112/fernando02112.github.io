@@ -75,8 +75,6 @@ torreForma.merge(troncoMalla.geometry, troncoMalla.matrix);
 torreForma.merge(baseMalla.geometry, baseMalla.matrix);
 torreForma.merge(subaseMalla.geometry, subaseMalla.matrix);
 torreForma.merge(superiorMalla.geometry, superiorMalla.matrix);
-var material = new THREE.MeshNormalMaterial();
-var torreMalla = new THREE.Mesh(torreForma, material);
 
 //Añadiendo los colores 
 var material1=new THREE.MeshBasicMaterial( {color: 0xb8b8b8} );
