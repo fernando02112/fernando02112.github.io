@@ -98,10 +98,10 @@ torreMalla4.position.x=80;
 torreMalla4.position.z=80;
 
 //Definiendo opacidades del 100, 75, 50 y 25%
-var Opacidad100=new THREE.MeshLambertMaterial( {color: 0xffe100} );
-var Opacidad75=new THREE.MeshLambertMaterial( {color: 0xffe100,transparent:true,opacity:0.75});
-var Opacidad50=new THREE.MeshLambertMaterial( {color: 0x000ef5,transparent:true,opacity:0.50});
-var Opacidad25=new THREE.MeshLambertMaterial( {color: 0x000ef5,transparent:true,opacity:0.25});
+var Opacidad100=new THREE.MeshLambertMaterial( {color: 0xb8b8b8} );
+var Opacidad75=new THREE.MeshLambertMaterial( {color: 0xb8b8b8,transparent:true,opacity:0.75});
+var Opacidad50=new THREE.MeshLambertMaterial( {color: 0xffffff,transparent:true,opacity:0.50});
+var Opacidad25=new THREE.MeshLambertMaterial( {color: 0xffffff,transparent:true,opacity:0.25});
 
 //Asignando opacidades a cada torre
 var torreMalla1= new THREE.Mesh(torreForma,Opacidad100);
