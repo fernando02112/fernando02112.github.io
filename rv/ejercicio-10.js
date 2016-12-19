@@ -123,7 +123,7 @@ torre1=new THREE.Mesh(torreForma,marmolblanco);
   escena.add(torre1,grupo1,grupo2,grupo3,grupo4);
   renderizador = new THREE.WebGLRenderer();
 	
-	var lienzo = document.getElementById("tablero_pieza_mov");
+	var lienzo = document.getElementById("torre_movimiento");
         renderizador = new THREE.WebGLRenderer({canvas:lienzo, antialias:true});
         renderizador.setSize(window.innerHeight*.85,window.innerHeight*.85);
   }
