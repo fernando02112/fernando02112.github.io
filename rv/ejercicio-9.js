@@ -31,24 +31,20 @@ torreForma.merge(superiorMalla.geometry, superiorMalla.matrix);
 	);
 }
 
-
-
-
 	var cargadorTextura = new THREE.TextureLoader();
-	cargadorTextura.load( materialTextura, function(textura)
-		{
+	cargadorTextura.load( materialTextura, function(textura){
 			var material= new THREE.MeshBasicMaterial( {map:textura} );
 			var malla=new THREE.Mesh(alfilForma, material);
 			malla.position.x=posX;
 			malla.position.z=posZ;
 			grupo.add(malla);
 		},		
-		// Function called when download progresses
+		
 		function ( xhr ) 
 		{
 		console.log( (xhr.loaded / xhr.total * 100) + '% loaded' );
 		},
-		// Function called when download errors
+		
 		function ( xhr ) 
 		{
 		console.log( 'An error happened' );
