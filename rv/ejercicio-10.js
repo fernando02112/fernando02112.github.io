@@ -125,7 +125,7 @@ torre1=new THREE.Mesh(torreForma,marmolblanco);
 	var lienzo = document.getElementById("tablero_pieza_mov");
         renderizador = new THREE.WebGLRenderer({canvas:lienzo, antialias:true});
         renderizador.setSize(window.innerHeight*.85,window.innerHeight*.85);
-	document.body.appendChild(renderizador.domElement);
+	
   }
   
 function loop() {
