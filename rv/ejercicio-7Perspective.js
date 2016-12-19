@@ -81,8 +81,6 @@ escena.add(torreMalla2);
 escena.add(torreMalla3);
 escena.add(torreMalla4);
 
-
-escena.rotateX(-Math.PI/4)
 var renderizador=new THREE.WebGLRenderer();
 renderizador.setSize(window.innerHeight*.85,window.innerHeight*.85);
 document.body.appendChild(renderizador.domElement);
