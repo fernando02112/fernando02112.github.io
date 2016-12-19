@@ -1,41 +1,53 @@
-var forma = new THREE.Geometry();<!--primero se define el objeto-->
-forma.vertices.push(  new THREE.Vector3(  1,  0,  1));<!--vertice0-->
-forma.vertices.push(  new THREE.Vector3(  1,  0,  -1));<!--vértice1-->
-forma.vertices.push(  new THREE.Vector3(  -1, 0,  -1));<!--vértice2-->
-forma.vertices.push(  new THREE.Vector3(  -1, 0,  1));<!--vértice3-->
-forma.vertices.push(  new THREE.Vector3(  1,  1,  1));<!--vertice4-->
-forma.vertices.push(  new THREE.Vector3(  1,  1,  -1));<!--vértice5-->
-forma.vertices.push(  new THREE.Vector3(  -1,  1,  -1));<!--vértice6-->
-forma.vertices.push(  new THREE.Vector3(  -1,  1,  1));<!--vértice7-->
+var forma=new THREE.Geometry();
+//Coordenadas de los vértices
+forma.vertices.push(  new THREE.Vector3(1,1,1) );
+forma.vertices.push(  new THREE.Vector3(1,1,-1) );
+forma.vertices.push(  new THREE.Vector3(-1,1,-1) );
+forma.vertices.push(  new THREE.Vector3(-1,1,1) );
+forma.vertices.push(  new THREE.Vector3(-1,-1,1) );
+forma.vertices.push(  new THREE.Vector3(1,-1,1) );
+forma.vertices.push(  new THREE.Vector3(1,-1,-1) );
+forma.vertices.push(  new THREE.Vector3(-1,-1,-1) );
 
+//Contruyendo las caras con los vértices
+//tapa
+forma.faces.push(  new THREE.Face3(0,1,2) );
+forma.faces.push(  new THREE.Face3(0,2,3) );
+//Frente D
+forma.faces.push(  new THREE.Face3(0,3,4) );
+forma.faces.push(  new THREE.Face3(0,4,5) );
+//Atras D
+forma.faces.push(  new THREE.Face3(0,6,5) );
+forma.faces.push(  new THREE.Face3(1,6,0) );
+//atras I
+forma.faces.push(  new THREE.Face3(1,2,7) );
+forma.faces.push(  new THREE.Face3(1,7,6) );
+//frente I
+forma.faces.push(  new THREE.Face3(7,4,2) );
+forma.faces.push(  new THREE.Face3(2,4,3) );
+//abajo
+forma.faces.push(  new THREE.Face3(7,4,5) );
+forma.faces.push(  new THREE.Face3(7,5,6) );
 
-forma.faces.push( new THREE.Face3(3,  2,  1));<!--cara0-->
-forma.faces.push( new THREE.Face3(3,  1,  0));<!--cara1-->
-forma.faces.push( new THREE.Face3(3,  0,  4));<!--cara2-->
-forma.faces.push( new THREE.Face3(0,  1,  4));<!--cara3-->
-forma.faces.push( new THREE.Face3(1,  4,  5));<!--cara4-->
-forma.faces.push( new THREE.Face3(2,  1,  5));<!--cara5-->
-forma.faces.push( new THREE.Face3(5,  6,  1));<!--cara6-->
-forma.faces.push( new THREE.Face3(6,  2,  1));<!--cara7-->
-forma.faces.push( new THREE.Face3(2,  3,  7));<!--cara8-->
-forma.faces.push( new THREE.Face3(6,  7,  2));<!--cara9-->
-forma.faces.push( new THREE.Face3(7,  4,  3));<!--cara10-->
-forma.faces.push( new THREE.Face3(4,  6,  7));<!--cara11-->
-forma.faces.push( new THREE.Face3(4,  7,  3));<!--cara12-->
-forma.faces.push( new THREE.Face3(4,  5,  6));<!--cara13-->
+//Se solicita el computo de la esfera de menor tamaño que acota al objeto
+forma.computeBoundingSphere();
+//Tipo de material al usar, se computan las normales de las caras 
+forma.computeFaceNormals();
 
-forma.computeBoundingSphere();<!--esfera de menor tamaño que acota al objeto-->
-forma.computeFaceNormals();<!--se computan las normales de las caras por el tipo de material a usar-->
+var material= new THREE.MeshNormalMaterial();
 
-var material = new THREE.MeshNormalMaterial();
-var malla = new THREE.Mesh(forma, material);
+var malla=new THREE.Mesh(forma,material);
 malla.rotateX(Math.PI/4);
+malla.rotateY(Math.PI/4);
 
 var escena = new THREE.Scene();
-escena.add( malla );
-var camara = new THREE.PerspectiveCamera();
-camara.position.z = 5;
-var renderizador = new THREE.WebGLRenderer();
-renderizador.setSize(window.innerHeight*.95, window.innerHeight*.95);
-document.body.appendChild(renderizador.domElement);
-renderizador.render(escena, camara);
+escena.add(malla);
+
+var camara=new THREE.PerspectiveCamera();
+camara.position.z=5;
+
+
+var renderizador= new THREE.WebGLRenderer();
+renderizador.setSize( window.innerHeight*.75, window.innerHeight*.75);
+document.body.appendChild( renderizador.domElement);
+renderizador.render(escena,camara);
