@@ -19,6 +19,9 @@ torreForma.merge(subaseMalla.geometry, subaseMalla.matrix);
 torreForma.merge(superiorMalla.geometry, superiorMalla.matrix);
 
 //Definiendo el cargador de las texturas
+	/*
+	var material = new THREE.MeshNormalMaterial();
+        this.malla = new THREE.Mesh(torreForma,material);*/
 	var cargadorTextura = new THREE.TextureLoader();
 	cargadorTextura.load( materialTextura, function(textura)
 		{
