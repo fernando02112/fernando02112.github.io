@@ -1,3 +1,4 @@
+var materialTextura;
 function Torre(posX,posZ,materialTextura)
 {
 	var troncoForma = new THREE.CylinderGeometry(3, 3, 8);
