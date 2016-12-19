@@ -7,7 +7,7 @@ var planoLejano=1000;
 
 var camara=new THREE.PerspectiveCamera(campoVision,relacionAspecto,planoCercano,planoLejano);
 camara.position.z = 200;
-camara.position.y = 0;
+camara.position.y = 30;
 camara.position.x = 50;
 
 var renderizador = new THREE.WebGLRenderer();
@@ -65,8 +65,8 @@ torreForma.merge(superiorMalla.geometry, superiorMalla.matrix);
 var material = new THREE.MeshNormalMaterial();
 var torreMalla = new THREE.Mesh(torreForma, material);
 
-var material1=new THREE.MeshBasicMaterial( {color: 0xffffff} );
-var material2=new THREE.MeshBasicMaterial( {color: 0xb8b8b8});
+var material1=new THREE.MeshBasicMaterial( {color: 0xb8b8b8} );
+var material2=new THREE.MeshBasicMaterial( {color: 0xffffff});
 
 var torreMalla1= new THREE.Mesh(torreForma,material1);
 torreMalla1.position.x=10;
