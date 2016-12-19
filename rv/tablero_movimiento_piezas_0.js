@@ -293,8 +293,8 @@ Seleccion.prototype = new Agent();
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 function Cursor(x=0,y=0,z=0){
   Agent.call(this,x,y,z);
-  var luzazul =  new THREE.MeshLambertMaterial({color: 0x0000ff});
-  this.add(new THREE.Mesh(new THREE.BoxGeometry(10.1,10.1,10.1),luzazul));
+  var scursor =  new THREE.MeshLambertMaterial({color: 0x00ff00});
+  this.add(new THREE.Mesh(new THREE.BoxGeometry(10.1,10.1,10.1),scursor));
   this.position.y=y;
   this.position.z=z;
   this.position.x=x;
