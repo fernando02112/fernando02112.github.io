@@ -45,9 +45,9 @@ for(var i=1; i<=8; i++)
 }
 
 //Inicio Torre
-var troncoForma = new THREE.CylinderGeometry(5, 5, 8);
-var baseForma = new THREE.CylinderGeometry(6.5, 6.5, 2.5);
-var subaseForma = new THREE.CylinderGeometry(8.5, 8.5, 2.5);
+var troncoForma = new THREE.CylinderGeometry(3, 3, 8);
+var baseForma = new THREE.CylinderGeometry(4, 4, 2.5);
+var subaseForma = new THREE.CylinderGeometry(5, 5, 2.5);
 var superiorForma = new THREE.CylinderGeometry(0, 7, 7.5);
 superiorForma.translate(0,2.35,0);
 baseForma.translate(0,.25,0);
