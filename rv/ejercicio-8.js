@@ -134,7 +134,6 @@ document.body.appendChild (renderizador.domElement);
 	
 //Activando las sombras
 renderizador.shadowMapEnabled=true;
-base.receiveShadow=true;
 torreMalla1.castShadow=true;
 torreMalla2.castShadow=true;
 torreMalla3.castShadow=true;
